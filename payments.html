@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<style>
+ body{
+     background-color: gray;
+     text-align: center;
+ }
+ button{
+        width: 15%;
+        text-align: center;
+        background-color: rgb(41, 40, 40);
+        color: white;
+        border-radius: 4px;
+    }
+</style>
+
+<body>
+    <h1>Payments</h1>
+
+    <br>
+    <br>
+    <form id="details">
+        <label for="add">Card No
+            <input type="text" id="add" placeholder="card number">
+        </label>
+        <label for="add2">Cardholder's Name
+            <input type="text" id="add2" placeholder="Name on card">
+        </label>
+        <label for="add3">CVV
+            <input type="password" id="add2" placeholder="CVV">
+        </label>
+        <br>
+        <br>
+        <br>
+        <button onclick="alertOrder()">Place Order</button>
+    </form>
+
+</body>
+
+<script>
+    alert("Your Order Placed Sucessfuly")
+</script>
+
+</html>

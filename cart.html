@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<style>
+    #data{
+        display: grid;
+        grid-template-columns: repeat(4, 20%);
+        grid-gap: 5%;
+    }
+    button{
+        width: 20%;
+        text-align: center;
+        background-color: rgb(41, 40, 40);
+        color: white;
+        border-radius: 4px;
+    }
+    input{
+        text-align: center;
+    }
+    body{
+     background-color: gray;
+     text-align: center;
+ }
+
+</style>
+
+<body>
+    <h1>Shopping Cart</h1>
+
+    <div class="rhs">
+        <div id="cart">CART
+            <br>
+            <br>
+            <div id="item"></div>
+            <div id="total"></div>
+        </div>
+        <br>
+        <input type="text" id="prmo" placeholder="Promocode">
+        <br>
+        <br>
+        <button id="code" onclick="promocode()">Apply promocode</button>
+    
+        <div id="discount"></div>
+        <br>
+        <br>
+        <br>
+        <button id="check" onclick="adress()">Proceed to Buy</button>
+    </div>
+    <span>Your Cart: </span>
+    <div id="data"></div>
+
+</body>
+
+<script src="cart.js"></script>
+
+</html>
